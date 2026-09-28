@@ -49,7 +49,7 @@ YuNet and SFace weights download into `models/` on first use (~37 MB for SFace).
 | Cascades, YuNet, SFace | `detectors.py`, `sface.py` | Published weights, not trained here |
 | Fusion, eye alignment, quality | `pipeline.py`, `align.py`, `quality.py` | The system under test |
 
-The math and the things this system refuses to claim are in [THEORY.md](THEORY.md).
+The math and the things this system refuses to claim are in [THEORY.md](THEORY.md). A walkthrough of one pass, and of what the viewer recomputes, is in [HOW.md](HOW.md).
 
 ## Results
 
