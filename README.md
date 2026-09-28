@@ -89,6 +89,25 @@ Fictional studio photographs in `samples/`. Fusion of the frontal cascades, both
 
 Fusion scores on these plates sit at 0.97. Skin ratio inside the box is reported, not used as a detector. The center box on the group plate sits high (chin clipped). That is the fusion of a square Haar window with YuNet, not a hidden success.
 
+### Photographs
+
+Twelve real photographs live in `samples/photographs/` and are not part of the SFace pair table above. The same fusion was run on each. Counts are detector output, not ground truth. Plate N (sun hat, profile, sunglasses) fuses to nothing. Plate D keeps a box on the table. Plate E keeps a box on foliage. Credits are in [samples/photographs/ATTRIBUTION.md](samples/photographs/ATTRIBUTION.md).
+
+| File | Fused faces |
+| --- | --- |
+| `nasa-class.jpg` | 10 |
+| `market-shade.jpg` | 3 |
+| `kondh.jpg` | 2 |
+| `in-the-crowd.jpg` | 1 |
+| `pipe.jpg` | 1 |
+| `occluded-pair.jpg` | 1 |
+| `sunglasses.jpg` | 1 |
+| `wellcome.jpg` | 1 |
+| `aviator.jpg` | 1 |
+| `fedora.jpg` | 1 |
+| `sun-hat.jpg` | 0 |
+| `terrace.jpg` | 1 |
+
 ### SFace verification
 
 Photometric copies (gamma 0.7, gamma 1.5, blur, JPEG q=35), matched back to the same face by IoU so the group plate does not pair one person with another. Impostors are every other pair of faces across the three plates.
@@ -105,7 +124,8 @@ The OpenCV Zoo cosine threshold is **0.363**. On this set every genuine pair cle
 ```
 visage/            library
 tests/test_core.py unit tests, no network
-samples/           three plates
+samples/           three studio plates
+samples/photographs/  twelve photographs, with attribution
 results/           bench.json and annotated plates
 THEORY.md          the write-up
 ```
