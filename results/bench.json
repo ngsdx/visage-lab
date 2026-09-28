@@ -1,0 +1,560 @@
+{
+  "adaboost_haar": {
+    "features": 64,
+    "rounds": 10,
+    "heldout_accuracy": 0.9896,
+    "localization_iou": 1.0,
+    "localization_ap50": 1.0,
+    "face_minus_blank_margin": 24.9046,
+    "detections": 1
+  },
+  "hog_svm": {
+    "heldout_accuracy": 1.0,
+    "descriptor_length": 1764,
+    "vertical_edge_peak_bin": 0
+  },
+  "recognition": {
+    "identities": 6,
+    "train": 36,
+    "test": 12,
+    "uniform_lbp_bins": 59,
+    "eigenfaces_rank1": 1.0,
+    "fisherfaces_rank1": 1.0,
+    "lbph_rank1": 1.0
+  },
+  "sort": {
+    "stable_id": true,
+    "id_after_gap": 1,
+    "frames": 20
+  },
+  "plates": {
+    "skipped": false,
+    "plates": [
+      {
+        "file": "charcoal.jpg",
+        "width": 720,
+        "height": 960,
+        "raw_count": 4,
+        "faces": 1,
+        "seconds": 0.773,
+        "raw": [
+          {
+            "x": 176,
+            "y": 152,
+            "w": 382,
+            "h": 382,
+            "score": 0.7393,
+            "source": "haar"
+          },
+          {
+            "x": 207,
+            "y": 152,
+            "w": 378,
+            "h": 378,
+            "score": 0.9658,
+            "source": "haar-alt2"
+          },
+          {
+            "x": 110,
+            "y": 121,
+            "w": 430,
+            "h": 430,
+            "score": 0.5679,
+            "source": "profile-flip"
+          },
+          {
+            "x": 224,
+            "y": 151,
+            "w": 284,
+            "h": 407,
+            "score": 0.9365,
+            "source": "yunet"
+          }
+        ],
+        "detections": [
+          {
+            "source": "fusion",
+            "score": 0.9658,
+            "box": [
+              188,
+              146,
+              361,
+              397
+            ],
+            "skin_ratio": 0.5384,
+            "quality": {
+              "blur": 1363.19,
+              "blur_score": 1.0,
+              "exposure": 106.64,
+              "exposure_score": 0.8331,
+              "size_score": 1.0,
+              "roll": -5.75,
+              "score": 0.9367
+            },
+            "aligned": true,
+            "cluster": 4,
+            "sources": [
+              "haar",
+              "haar-alt2",
+              "profile-flip",
+              "yunet"
+            ],
+            "landmarks": {
+              "right_eye": [
+                322.37,
+                306.64
+              ],
+              "left_eye": [
+                441.49,
+                294.64
+              ],
+              "nose": [
+                403.82,
+                371.97
+              ],
+              "mouth_right": [
+                344.33,
+                453.58
+              ],
+              "mouth_left": [
+                439.78,
+                443.7
+              ],
+              "image_left_eye": [
+                322.37,
+                306.64
+              ],
+              "image_right_eye": [
+                441.49,
+                294.64
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "file": "north-light.jpg",
+        "width": 720,
+        "height": 960,
+        "raw_count": 5,
+        "faces": 1,
+        "seconds": 0.632,
+        "raw": [
+          {
+            "x": 137,
+            "y": 205,
+            "w": 404,
+            "h": 404,
+            "score": 0.7905,
+            "source": "haar"
+          },
+          {
+            "x": 124,
+            "y": 204,
+            "w": 409,
+            "h": 409,
+            "score": 0.9663,
+            "source": "haar-alt2"
+          },
+          {
+            "x": 224,
+            "y": 190,
+            "w": 404,
+            "h": 404,
+            "score": 0.6109,
+            "source": "profile"
+          },
+          {
+            "x": 84,
+            "y": 220,
+            "w": 351,
+            "h": 351,
+            "score": 0.5281,
+            "source": "profile-flip"
+          },
+          {
+            "x": 174,
+            "y": 178,
+            "w": 334,
+            "h": 476,
+            "score": 0.9197,
+            "source": "yunet"
+          }
+        ],
+        "detections": [
+          {
+            "source": "fusion",
+            "score": 0.9663,
+            "box": [
+              149,
+              198,
+              381,
+              415
+            ],
+            "skin_ratio": 0.5936,
+            "quality": {
+              "blur": 255.88,
+              "blur_score": 0.8925,
+              "exposure": 107.14,
+              "exposure_score": 0.8371,
+              "size_score": 1.0,
+              "roll": -4.95,
+              "score": 0.8977
+            },
+            "aligned": true,
+            "cluster": 5,
+            "sources": [
+              "haar",
+              "haar-alt2",
+              "profile",
+              "profile-flip",
+              "yunet"
+            ],
+            "landmarks": {
+              "right_eye": [
+                246.66,
+                371.67
+              ],
+              "left_eye": [
+                408.33,
+                357.67
+              ],
+              "nose": [
+                326.07,
+                460.24
+              ],
+              "mouth_right": [
+                272.76,
+                540.73
+              ],
+              "mouth_left": [
+                411.0,
+                529.58
+              ],
+              "image_left_eye": [
+                246.66,
+                371.67
+              ],
+              "image_right_eye": [
+                408.33,
+                357.67
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "file": "three.jpg",
+        "width": 960,
+        "height": 640,
+        "raw_count": 11,
+        "faces": 3,
+        "seconds": 0.595,
+        "raw": [
+          {
+            "x": 389,
+            "y": 118,
+            "w": 156,
+            "h": 156,
+            "score": 0.8114,
+            "source": "haar"
+          },
+          {
+            "x": 607,
+            "y": 180,
+            "w": 138,
+            "h": 138,
+            "score": 0.8155,
+            "source": "haar"
+          },
+          {
+            "x": 185,
+            "y": 205,
+            "w": 137,
+            "h": 137,
+            "score": 0.7663,
+            "source": "haar"
+          },
+          {
+            "x": 388,
+            "y": 120,
+            "w": 152,
+            "h": 152,
+            "score": 0.9662,
+            "source": "haar-alt2"
+          },
+          {
+            "x": 605,
+            "y": 180,
+            "w": 138,
+            "h": 138,
+            "score": 0.9663,
+            "source": "haar-alt2"
+          },
+          {
+            "x": 191,
+            "y": 203,
+            "w": 142,
+            "h": 142,
+            "score": 0.9659,
+            "source": "haar-alt2"
+          },
+          {
+            "x": 444,
+            "y": 137,
+            "w": 106,
+            "h": 106,
+            "score": 0.3316,
+            "source": "profile"
+          },
+          {
+            "x": 161,
+            "y": 195,
+            "w": 146,
+            "h": 146,
+            "score": 0.513,
+            "source": "profile-flip"
+          },
+          {
+            "x": 406,
+            "y": 126,
+            "w": 120,
+            "h": 147,
+            "score": 0.9526,
+            "source": "yunet"
+          },
+          {
+            "x": 197,
+            "y": 197,
+            "w": 110,
+            "h": 146,
+            "score": 0.9507,
+            "source": "yunet"
+          },
+          {
+            "x": 625,
+            "y": 171,
+            "w": 118,
+            "h": 156,
+            "score": 0.9385,
+            "source": "yunet"
+          }
+        ],
+        "detections": [
+          {
+            "source": "fusion",
+            "score": 0.9663,
+            "box": [
+              612,
+              177,
+              131,
+              144
+            ],
+            "skin_ratio": 0.8638,
+            "quality": {
+              "blur": 465.68,
+              "blur_score": 0.9886,
+              "exposure": 139.8,
+              "exposure_score": 0.9078,
+              "size_score": 1.0,
+              "roll": -3.76,
+              "score": 0.9583
+            },
+            "aligned": true,
+            "cluster": 3,
+            "sources": [
+              "haar",
+              "haar-alt2",
+              "yunet"
+            ],
+            "landmarks": {
+              "right_eye": [
+                651.13,
+                235.42
+              ],
+              "left_eye": [
+                702.36,
+                232.05
+              ],
+              "nose": [
+                675.5,
+                261.53
+              ],
+              "mouth_right": [
+                661.61,
+                288.48
+              ],
+              "mouth_left": [
+                702.65,
+                285.68
+              ],
+              "image_left_eye": [
+                651.13,
+                235.42
+              ],
+              "image_right_eye": [
+                702.36,
+                232.05
+              ]
+            }
+          },
+          {
+            "source": "fusion",
+            "score": 0.9662,
+            "box": [
+              395,
+              121,
+              142,
+              151
+            ],
+            "skin_ratio": 0.4767,
+            "quality": {
+              "blur": 679.7,
+              "blur_score": 1.0,
+              "exposure": 95.94,
+              "exposure_score": 0.7495,
+              "size_score": 1.0,
+              "roll": -0.01,
+              "score": 0.9373
+            },
+            "aligned": true,
+            "cluster": 3,
+            "sources": [
+              "haar",
+              "haar-alt2",
+              "yunet"
+            ],
+            "landmarks": {
+              "right_eye": [
+                436.58,
+                177.69
+              ],
+              "left_eye": [
+                497.92,
+                177.67
+              ],
+              "nose": [
+                466.47,
+                208.53
+              ],
+              "mouth_right": [
+                435.8,
+                231.32
+              ],
+              "mouth_left": [
+                493.92,
+                232.32
+              ],
+              "image_left_eye": [
+                436.58,
+                177.69
+              ],
+              "image_right_eye": [
+                497.92,
+                177.67
+              ]
+            }
+          },
+          {
+            "source": "fusion",
+            "score": 0.9659,
+            "box": [
+              187,
+              200,
+              132,
+              143
+            ],
+            "skin_ratio": 0.7057,
+            "quality": {
+              "blur": 499.21,
+              "blur_score": 0.9997,
+              "exposure": 118.91,
+              "exposure_score": 0.929,
+              "size_score": 1.0,
+              "roll": -1.82,
+              "score": 0.9753
+            },
+            "aligned": true,
+            "cluster": 4,
+            "sources": [
+              "haar",
+              "haar-alt2",
+              "profile-flip",
+              "yunet"
+            ],
+            "landmarks": {
+              "right_eye": [
+                237.77,
+                254.35
+              ],
+              "left_eye": [
+                290.6,
+                252.67
+              ],
+              "nose": [
+                271.99,
+                286.12
+              ],
+              "mouth_right": [
+                241.41,
+                308.85
+              ],
+              "mouth_left": [
+                287.72,
+                308.09
+              ],
+              "image_left_eye": [
+                237.77,
+                254.35
+              ],
+              "image_right_eye": [
+                290.6,
+                252.67
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "sface_genuine_cosine": [
+      0.9797,
+      0.9591,
+      0.9637,
+      0.9606,
+      0.9649,
+      0.9295,
+      0.9536,
+      0.9537,
+      0.9893,
+      0.9915,
+      0.9861,
+      0.941,
+      0.9196,
+      0.9778,
+      0.9114,
+      0.9679,
+      0.9406,
+      0.9682,
+      0.9225,
+      0.9338
+    ],
+    "sface_impostor_cosine": [
+      0.3656,
+      0.3924,
+      0.334,
+      0.4159,
+      0.4419,
+      0.5515,
+      0.3314,
+      0.4069,
+      0.3281,
+      0.2486
+    ],
+    "sface_genuine_cosine_mean": 0.9557,
+    "sface_impostor_cosine_mean": 0.3816,
+    "sface_genuine_n": 20,
+    "sface_impostor_n": 10,
+    "sface_threshold": 0.363
+  },
+  "seconds": 3.69
+}
